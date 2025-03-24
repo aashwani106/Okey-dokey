@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import loginSidebar from "./assets/login-sidebar.png";
 import logo from "./assets/okey-dokey-logo.png";
 import google from "./assets/google.png";
-import { Mail,Lock } from "lucide-react";
 
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,28 +10,27 @@ function LoginPage() {
   return (
     <div className="flex h-screen bg-white">
       {/* Sidebar */}
+      {/* Sidebar */}
       <div
-        className="md:w-1/2 bg-cover bg-center md:block text-white p-8 flex flex-col justify-center items-center h-full"
+        className="hidden md:flex md:w-1/2 bg-cover bg-center text-white p-8 flex-col justify-center items-center h-full"
         style={{ backgroundImage: `url(${loginSidebar})` }}
       >
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-center md:mr-50 md:mt-100">
+          <h1 className="text-4xl font-bold text-center">
             Welcome to Okey Dokey
           </h1>
-          <p className="text-lg text-center md:mr-50">
+          <p className="text-lg text-center">
             Find your People, Your Passion, Your Purpose
           </p>
         </div>
       </div>
 
       {/* Login Form */}
-      <div className="w-full md:w-1/2 flex h-full items-center justify-center flex-col">
-        <div className="logo mb-3 flex justify-center">
-          <img src={logo} className="w-[100px]" alt="Logo" />
-        </div>
-        <div className="second-box border-2 border-gray-300 rounded-lg shadow-xl p-6 bg-white w-full sm:w-3/4 md:w-100">
+      <div className="w-full md:w-1/2 flex flex-col items-center justify-center h-full">
+        <img src={logo} className="w-[120px] mb-6" alt="Logo" />
+        <div className="border-2 border-gray-300 rounded-xl shadow-xl p-10 bg-white w-full sm:w-[450px] md:w-[500px]">
           <h2 className="text-2xl font-semibold text-center">Welcome Back</h2>
-          <p className="text-gray-500 mb-4 text-center">
+          <p className="text-gray-500 mb-6 text-center">
             Please login to continue
           </p>
 
@@ -47,7 +45,7 @@ function LoginPage() {
             <div className="border-t border-gray-300 flex-grow"></div>
           </div>
 
-          <form className="">
+          <form>
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-md font-bold mb-2"
@@ -62,7 +60,7 @@ function LoginPage() {
                   type="text"
                   placeholder="example@gmail.com"
                 />
-                <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-gray-500">
+                <div className="absolute inset-y-0 left-3 flex items-center text-gray-500">
                   <Mail size={20} />
                 </div>
               </div>
@@ -70,7 +68,7 @@ function LoginPage() {
 
             <div className="mb-6 relative">
               <label
-                className="block text-gray-700 text-sm font-bold mb-2 "
+                className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="password"
               >
                 Password
@@ -82,7 +80,7 @@ function LoginPage() {
                   type={showPassword ? "text" : "password"}
                   placeholder="Password"
                 />
-                <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-gray-500">
+                <div className="absolute inset-y-0 left-3 flex items-center text-gray-500">
                   <Lock size={20} />
                 </div>
                 <button
@@ -95,7 +93,7 @@ function LoginPage() {
               </div>
             </div>
 
-            <div className="flex justify-end">
+            <div className="flex justify-end mb-4">
               <a
                 className="text-black hover:text-indigo-800 text-sm font-bold underline"
                 href="#"
@@ -104,17 +102,15 @@ function LoginPage() {
               </a>
             </div>
 
-            <button className="bg-[#8d34dc] hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline w-full mt-3">
+            <button className="bg-[#8d34dc] hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-full focus:outline-none focus:shadow-outline w-full">
               Login
             </button>
 
-            <div className="mt-5">
-              <p className="text-center">
-                <span className="text-gray-500"> New user? </span>
-                <a href="#" className="text-blue-500">
-                  Create account
-                </a>
-              </p>
+            <div className="mt-5 text-center">
+              <span className="text-gray-500">New user? </span>
+              <a href="#" className="text-blue-500 font-bold">
+                Create account
+              </a>
             </div>
           </form>
         </div>
