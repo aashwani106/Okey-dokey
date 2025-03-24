@@ -1,7 +1,7 @@
 import React from "react";
 import loginSidebar from "./assets/login-sidebar.png";
 import logo from "./assets/okey-dokey-logo.png";
-
+import google from "./assets/google.png";
 function LoginPage() {
   return (
     <div className="flex h-screen bg-white">
@@ -22,11 +22,11 @@ function LoginPage() {
 
       {/* Login Form */}
 
-      <div className="w-full md:w-1/2 flex h-full items-center justify-center flex-col">
+      <div className="w-full md:w-1/2 flex h-full items-center justify-center flex-col" >
         <div className="logo mb-3 flex justify-center">
           <img src={logo} className="w-[100px]" alt="Logo" />
         </div>
-        <div className="border-2 border-gray-300 rounded-lg shadow-lg p-6 bg-white w-full sm:w-3/4 md:w-100">
+        <div  className="border-2 border-gray-300 rounded-lg shadow-lg p-6 bg-white w-full sm:w-3/4 md:w-100">
           <h2 className="text-2xl font-semibold text-center">Welcome Back</h2>
           <p className="text-gray-500 mb-4 text-center">
             Please login to continue
@@ -34,7 +34,7 @@ function LoginPage() {
 
           <button className="bg-white border border-gray-300 rounded-full py-2 px-4 mb-4 w-full flex items-center justify-center">
             <img
-              src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-web-design-logo-1.png"
+              src={google}
               alt="Google Logo"
               className="w-6 h-6 mr-2"
             />
