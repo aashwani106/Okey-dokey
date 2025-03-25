@@ -10,29 +10,28 @@ function LoginPage() {
   return (
     <div className="flex h-screen bg-white">
       {/* Sidebar */}
-      {/* Sidebar */}
-      <div
-        className="hidden md:flex md:w-1/2 bg-cover bg-center text-white p-8 flex-col justify-center items-center h-full"
-        style={{ backgroundImage: `url(${loginSidebar})` }}
-      >
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-center">
-            Welcome to Okey Dokey
-          </h1>
-          <p className="text-lg text-center">
-            Find your People, Your Passion, Your Purpose
-          </p>
-        </div>
-      </div>
+     {/* Sidebar */}
+<div
+  className="hidden md:flex md:w-1/2 bg-cover bg-center text-white p-8 flex-col justify-center items-center h-full"
+  style={{ backgroundImage: `url(${loginSidebar})` }}
+>
+  <div className="flex flex-col justify-center items-center">
+    <h1 className="text-4xl font-bold text-center">
+      Welcome to Okey Dokey
+    </h1>
+    <p className="text-lg text-center">
+      Find your People, Your Passion, Your Purpose
+    </p>
+  </div>
+</div>
+
 
       {/* Login Form */}
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center h-full">
         <img src={logo} className="w-[120px] mb-6" alt="Logo" />
         <div className="border-2 border-gray-300 rounded-xl shadow-xl p-10 bg-white w-full sm:w-[450px] md:w-[500px]">
           <h2 className="text-2xl font-semibold text-center">Welcome Back</h2>
-          <p className="text-gray-500 mb-6 text-center">
-            Please login to continue
-          </p>
+          <p className="text-gray-500 mb-6 text-center">Please login to continue</p>
 
           <button className="bg-white border border-gray-300 rounded-full py-2 px-4 mb-4 w-full flex items-center justify-center text-gray-500">
             <img src={google} alt="Google Logo" className="w-6 h-6 mr-2" />
@@ -47,10 +46,7 @@ function LoginPage() {
 
           <form>
             <div className="mb-4">
-              <label
-                className="block text-gray-700 text-md font-bold mb-2"
-                htmlFor="username"
-              >
+              <label className="block text-gray-700 text-md font-bold mb-2" htmlFor="username">
                 Email address
               </label>
               <div className="relative">
@@ -67,10 +63,7 @@ function LoginPage() {
             </div>
 
             <div className="mb-6 relative">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="password"
-              >
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
                 Password
               </label>
               <div className="relative">
@@ -94,10 +87,7 @@ function LoginPage() {
             </div>
 
             <div className="flex justify-end mb-4">
-              <a
-                className="text-black hover:text-indigo-800 text-sm font-bold underline"
-                href="#"
-              >
+              <a className="text-black hover:text-indigo-800 text-sm font-bold underline" href="#">
                 Forgot password?
               </a>
             </div>
@@ -108,9 +98,7 @@ function LoginPage() {
 
             <div className="mt-5 text-center">
               <span className="text-gray-500">New user? </span>
-              <a href="#" className="text-blue-500 font-bold">
-                Create account
-              </a>
+              <a href="#" className="text-black-500 font-bold">Create account</a>
             </div>
           </form>
         </div>
