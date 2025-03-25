@@ -10,7 +10,6 @@ function LoginPage() {
   return (
     <div className="flex h-screen bg-white">
       {/* Sidebar */}
-     {/* Sidebar */}
 <div
   className="hidden md:flex md:w-1/2 bg-cover bg-center text-white p-8 flex-col justify-center items-center h-full"
   style={{ backgroundImage: `url(${loginSidebar})` }}
